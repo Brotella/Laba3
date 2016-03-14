@@ -48,20 +48,6 @@ public:
 		return str[index];
 	}
 
-
-/*
-	void operator=(MyString &s)
-	{
-		if (str != NULL)
-			delete str;
-
-		str = new wchar_t[wcslen(s.str) + 1];
-
-		wcscpy(str, s.str);
-
-	}
-*/
-
 	~MyString()
 	{
 		delete[] str;
